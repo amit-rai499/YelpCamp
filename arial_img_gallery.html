@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="sidenav.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" type="text/css" href="content_jumbo.css">
+  
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.js"></script>
+
+	<style type="text/css">
+    .zoom{
+      zoom:80%;
+    }
+
+.header{
+   margin-top:0px;
+   width:100%;
+   height:500px;
+   opacity:.8;
+   background-color:rgb(30, 173, 255);
+   background-image:url('https://res.cloudinary.com/arpr/image/upload/v1541394028/architecture-building-campus-207684.jpg');
+   background-size:relative;
+   background-position:bottom;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1500px;
+        border-right: 1px;
+        border-left:  1px;
+    }
+}
+		.gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 100%; }
+.gallery .pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease; }
+.gallery .animation {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1); }
+
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
+}
+	</style>
+	<script type="text/javascript">
+		$(function() {
+var selectedClass = "";
+$(".filter").click(function(){
+selectedClass = $(this).attr("data-rel");
+$("#gallery").fadeTo(100, 0.1);
+$("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
+setTimeout(function() {
+$("."+selectedClass).fadeIn().addClass('animation');
+$("#gallery").fadeTo(300, 1);
+}, 300);
+});
+});
+	</script>
+</head>
+<body class="zoom" style="background: black">
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-danger" >
+    
+      <a class="navbar-brand" href="#"><img src="https://www.freepnglogos.com/uploads/yelp-logo-22.png"  width="80px" height="50px"></a>
+     
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li id="home" class="nav-item">
+            <a class="nav-link" href="content_page.html">Campgrounds</a>
+          </li>
+          </li>
+          <li id="about" class="nav-item">
+            <a class="nav-link" href="arial_img_gallery.html">Arial Photographs</a>
+          </li>
+          </li>
+          <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="update.html">Update my record</a>
+                    <a class="dropdown-item" href="#">Schedule trip</a>
+                    <a class="dropdown-item" href="feedback.html">Feedback</a>
+                </div>
+            </li>
+          <li id="about" class="nav-item">
+            <a class="nav-link" href="about_us.html">About Us</a>
+          </li>
+          <li id="newCampground" class="nav-item">
+            <a class="nav-link" href="#">New</a>
+          </li>
+
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          
+            <li id="login" class="nav-item">
+              <a class="nav-link" href="login_page.html">Login</a>
+            </li>
+            <li id="register" class="nav-item">
+              <a class="nav-link" href="signup_page.html">New-User</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+  </nav>
+
+ <div class="header" >
+
+</div>
+<br>
+<br><br>
+		<!-- Grid row -->
+		<div class="container" >
+<div class="row" >
+
+  <!-- Grid column -->
+  
+  <!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+
+<!-- Grid row -->
+<div class="gallery" id="gallery">
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 1">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 1">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 1">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+</div>
+</div>
+
+<!-- Grid row -->
+</body>
+</html>
